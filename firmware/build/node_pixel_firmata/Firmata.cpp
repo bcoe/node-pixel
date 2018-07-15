@@ -73,11 +73,11 @@ FirmataClass::FirmataClass()
 //******************************************************************************
 
 /**
- * Initialize the default Serial transport at the default baud of 57600.
+ * Initialize the default Serial transport at the default baud of 28800.
  */
 void FirmataClass::begin(void)
 {
-  begin(57600);
+  begin(28800);
 }
 
 /**
@@ -85,7 +85,7 @@ void FirmataClass::begin(void)
  * Sends the protocol version to the host application followed by the firmware version and name.
  * blinkVersion is also called. To skip the call to blinkVersion, call Firmata.disableBlinkVersion()
  * before calling Firmata.begin(baud).
- * @param speed The baud to use. 57600 baud is the default value.
+ * @param speed The baud to use. 28800 baud is the default value.
  */
 void FirmataClass::begin(long speed)
 {

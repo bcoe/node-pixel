@@ -772,7 +772,7 @@ void setup()
 
   // to use a port other than Serial, such as Serial1 on an Arduino Leonardo or Mega,
   // Call begin(baud) on the alternate serial port and pass it to Firmata to begin like this:
-  // Serial1.begin(57600);
+  // Serial1.begin(28800);
   // Firmata.begin(Serial1);
   // However do not do this if you are using SERIAL_MESSAGE
 #if DEBUG
@@ -780,7 +780,7 @@ void setup()
   serialport.println("Setup");
 #endif
 
-  Firmata.begin(57600);
+  Firmata.begin(28800);
   while (!Serial) {
     ; // wait for serial port to connect. Needed for ATmega32u4-based boards and Arduino 101
   }
